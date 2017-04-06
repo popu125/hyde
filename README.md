@@ -1,13 +1,14 @@
-# Hyde
+# Hyde-pa
 
 Hyde is a brazen two-column [hugo](http://hugo.spf13.com) theme based on the [Jekyll](http://jekyllrb.com) theme of the same name.
 It pairs a prominent sidebar with uncomplicated content.
 
-![Hyde screenshot](https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png)
+Hyde-pa is a personel Hyde branch for myself.
 
 
 ## Contents
 
+- [Differences](#differences)
 - [Installation](#installation)
 - [Options](#options)
   - [Sidebar menu](#sidebar-menu)
@@ -15,21 +16,27 @@ It pairs a prominent sidebar with uncomplicated content.
   - [Themes](#themes)
   - [Reverse layout](#reverse-layout)
   - [Disqus](#disqus)
+  - [Gitment](#gitment)
 - [Author](#author)
 - [Ported by](#ported-by)
 - [License](#license)
 
+
+## Differences
+
+- Change title's font to Nova Script.
+- Add [Gitment](https://github.com/imsun/gitment).
 
 ## Installation
 
 To install Hyde as your default theme, first install this repository in the `themes/` directory:
 
     $ cd themes/
-    $ git clone https://github.com/spf13/hyde.git
+    $ git clone https://github.com/popu125/hyde-pa.git
 
 Second, specify `hyde` as your default theme in the `config.toml` file. Just add the line
 
-    theme = "hyde"
+    theme = "hyde-pa"
 
 at the top of the file.
 
@@ -131,6 +138,18 @@ You can optionally enable a comment system powered by Disqus for the posts. Simp
 ```yaml
 params:
   disqusShortname: "spf13"
+```
+
+### [Gitment](https://github.com/imsun/gitment)
+
+Gitment is a comment system based on GitHub Issues. See <https://github.com/imsun/gitment> for more details.
+
+```toml
+[params]
+  gitmentOwner = "your github username"
+  gitmentRepo = "repo to store issues"
+  gitmentCID = "your client id"
+  gitmentCSecret = "your client secret key"
 ```
 
 ## Author

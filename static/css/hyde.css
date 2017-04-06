@@ -45,6 +45,12 @@ html {
   }
 }
 
+.post-title {
+  font-family: "Nova Script", sans-serif;
+}
+h1 {
+  font-family: "Nova Script", sans-serif;
+}
 
 /*
  * Sidebar
@@ -79,7 +85,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Nova Script", serif;
   font-size: 3.25rem;
 }
 

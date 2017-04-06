@@ -1,4 +1,4 @@
-	{{ partial "head.html" . }}
+{{ partial "head.html" . }}
 	<body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
 		{{ partial "sidebar.html" . }}
 
@@ -9,11 +9,13 @@
 			      {{ .Content }}
 			</div>
 
-			{{ if and (isset .Site.Params "disqusShortname") (ne .Site.Params.disqusShortname "") }}
+			{{ if and (.Site.Params.disqusShortname) (ne .Site.Params.disqusShortname "") }}
 				<h2>Comments</h2>
 				{{ partial "disqus" . }}
 			{{ end }}
+			{{ if .Site.Params.gitmentOwner }}
+				<h2>Comments</h2>
+				{{ partial "gitment" . }}
+			{{ end }}
 		</div>
-
-  </body>
-</html>
+{{ partial "footer.html" . }}

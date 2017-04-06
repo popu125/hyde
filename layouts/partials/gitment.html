@@ -1,0 +1,13 @@
+<div id="comments"></div>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/gitment.js"></script>
+<script type="text/javascript">
+const gitment = new Gitment({
+  owner: '{{ .Site.Params.gitmentOwner }}',
+  repo: '{{ .Site.Params.gitmentRepo }}',
+  oauth: {
+    client_id: '{{ .Site.Params.gitmentCID }}',
+    client_secret: '{{ .Site.Params.gitmentCSecret }}',
+  },
+})
+gitment.render('comments')
+</script>
