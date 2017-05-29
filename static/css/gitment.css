@@ -58,11 +58,13 @@
 }
 
 .gitment-header-like-btn,
-.gitment-comment-like-btn {
+.gitment-comment-like-btn,
+.gitment-comment-reply-btn {
   cursor: pointer;
 }
 
-.gitment-comment-like-btn {
+.gitment-comment-like-btn,
+.gitment-comment-reply-btn {
   float: right;
 }
 
@@ -75,7 +77,8 @@
   height: 30px;
 }
 
-.gitment-comment-like-btn svg {
+.gitment-comment-like-btn svg,
+.gitment-comment-reply-btn svg {
   vertical-align: middle;
   height: 20px;
 }
